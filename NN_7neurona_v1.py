@@ -1,9 +1,4 @@
 """
-https://github.com/Ramakm
-"""
-
-
-"""
 Loto 7/39: 7 neurona, samo forward (bez fit).
 Ulaz: empirijska distribucija. Težine fiksne SEED=39. Dva CSV: loto + plus.
 """
@@ -152,7 +147,7 @@ broj | udeo | skor
   20 | 0.023624 | 0.00111682
 ...
 
-next_loto: [1, 3, 17, 19, 33, 34, 35]
+next_loto: [1, x, 17, y, 33, z, 35]
 
 === LOTO PLUS ===
 NN_v1 — 7 neurona forward (bez fit) | LOTO PLUS
@@ -177,7 +172,7 @@ broj | udeo | skor
   22 | 0.024102 | 0.00100530
 ...
 
-next_loto_plus: [1, 3, 17, 19, 33, 34, 35]
+next_loto_plus: [1, x, 17, y, 33, z, 35]
 """
 
 
@@ -255,8 +250,8 @@ ANALIZA — NN_7neurona_v1.py:
    next = top 7 po skoru (tie-break manji broj).
 
 4. Izlaz RUN:
-   next_loto:      [1, 3, 17, 19, 33, 34, 35]
-   next_loto_plus: [1, 3, 17, 19, 33, 34, 35]
+   next_loto:      [1, x, 17, y, 33, z, 35]
+   next_loto_plus: [1, x, 17, y, 33, z, 35]
    Ista kombinacija na oba CSV — težine fiksne, udeo skoro uniforman,
    pa redosled skorova vodi istih 7 brojeva (33,17,1 dominantni).
 
